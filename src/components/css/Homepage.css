@@ -1,0 +1,55 @@
+.Homepage {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darkred;
+  }
+  
+  .header-center {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    font-size: 150%;
+    /* more space on the left side*/
+    margin-left: 10%;
+  }
+  
+  .header-button {
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.5rem;
+    background-color: lightgrey;
+    font-size: 1.2rem;
+  }
+  
+  .header-button:hover {
+    cursor: pointer;
+    background-color: #005fa3;
+  }
+
+  .button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .create-button {
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.5rem;
+    background-color: lightgrey;
+    font-size: 1.2rem;
+  }
+
+  .create-button:hover {
+    cursor: pointer;
+    background-color: #005fa3;
+  }
+  

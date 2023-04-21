@@ -1,0 +1,53 @@
+.card {
+    display: flex;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    background-color: whitesmoke;
+  }
+
+.login-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 12%;
+    padding: 5% 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 4px;
+    background-color: lightgrey;
+  }
+
+  .login-signup h1 {
+    background-color: darkred;
+    width: 85%;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .login-signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 85%;
+  }
+
+  .create-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 8%;
+    padding-bottom: 5% 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 4px;
+    background-color: rgb(70, 3, 3);
+    font-weight: bold;
+    color: white;
+  }
