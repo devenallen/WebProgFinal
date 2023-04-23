@@ -34,12 +34,3 @@ const users = require('./routes/api/users');
 
 app.use('/api/teams', teams);
 app.use('/api/users', users);
-
-// router.get('/', (req, res) => {res.send('testing get / team route')});
-// router.post('/create-user', (req, res) => {res.send('testing post /create-user team route')});
-//router.put('/edit-user/:name/:captain/:numPlayers', (req, res) => {res.send('testing put /edit-user team route')});
-//router.get('/view-user/:name/:captain/:numPlayers', (req, res) => {res.send('testing get /view-user team route')});
-//router.delete();
-//router.post('/login', (req, res) => {res.send('testing post /login user route')});
-//router.post('/signup', (req, res) => {res.send('testing post /signup user route')});
-
