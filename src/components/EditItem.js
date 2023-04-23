@@ -5,14 +5,17 @@ import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
 function EditItem(props) {
-    const { name } = useParams();
+    // const { name } = useParams();
     const navigate = useNavigate();
     const [teamname, setTeamname] = useState('');
     const [numPlayers, setNumPlayers] = useState('');
     const [captain, setCaptain] = useState('');
     const [logo, setLogo] = useState('');
     
-    const myID = new URLSearchParams(window.location.search).get('id');
+    const { id } = useParams();
+
+    // Find the user with the matching id
+    const user = props.users.find((u) => u.id === id);
   
     const handleTeamnameChange = (event) => {
       setTeamname(event.target.value);
@@ -32,9 +35,9 @@ function EditItem(props) {
   
     const handleSubmit = (event) => {
       event.preventDefault();
-    
+
       const updatedTeam = {
-        id: myID,
+        id: user.id,
         name: teamname,
         numPlayers: numPlayers,
         captain: captain,
@@ -47,7 +50,7 @@ function EditItem(props) {
   
     return (
       <div>
-        <h1>Edit {name}</h1>
+        <h1>Edit</h1>
       <Card className="create-team">
          <form className="overallform" onSubmit={handleSubmit}>
             <div className="createform">
