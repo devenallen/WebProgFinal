@@ -25,7 +25,7 @@ input[type="teamname"], input[type="numplayers"], input[type="captain"], input[t
     margin-top: 15%;
     margin-bottom: 3%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 50%;
 }
 

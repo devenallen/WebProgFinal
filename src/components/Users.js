@@ -18,7 +18,7 @@ function Users(props) {
       {props.users.map((user) => (
         <Card className="user-item__content">
           <div className="user-item__image">
-            <img src={user.image} alt={user.name} />
+          <img src={user.image} alt={user.name} />
           </div>
         <div className="user-item__info">
          <Link to={`/view-user/${user.id}`} className="linkinfo">

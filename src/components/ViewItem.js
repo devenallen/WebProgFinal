@@ -21,7 +21,7 @@ function ViewItem(props) {
           <h2> Number of Players: {user.numPlayers} </h2>
           <h2> Team Captain: {user.captain} </h2>
           <h2> Logo : </h2>
-          <img src={user.image} alt="logo" />
+          <img src={user.image} alt="logo" width="150" height="150"/>
           <div className="editbutton">
               <Link to="/">
                 <button className="editbuttons" type="button">Save</button>

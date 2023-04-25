@@ -41,7 +41,7 @@ function EditItem(props) {
         name: teamname,
         numPlayers: numPlayers,
         captain: captain,
-        logo: logo,
+        image: logo,
       };
 
       props.handleEditTeam(updatedTeam);
@@ -86,13 +86,25 @@ function EditItem(props) {
                 <label htmlFor="logo">Logo: </label>
                 <input
                     id="logo"
-                    type="url"
+                    type="logo"
                     alt="image"
                     placeholder= ""
                     value={logo}
                     onChange={handleLogoChange}
                 />
             </div>
+            <div className="createform">
+              <label htmlFor="logoPreview">Logo Preview: </label>
+              {logo && (
+                <img
+                  id="logoPreview"
+                  src={logo}
+                  alt="Logo Preview"
+                  width="150"
+                  height="150"
+                />
+              )}
+          </div>
             <div className="save">
                 <button className="savebutton" onClick={handleSubmit} type="submit">Save</button>
             </div>

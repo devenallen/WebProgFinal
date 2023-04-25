@@ -5,7 +5,11 @@ import { Link } from "react-router-dom";
 function Homepage(props) {
     
     const handleSignOut = (event) => {
-        props.setLogin();
+        localStorage.removeItem("token");
+        props.setLogin(false);
+
+        const token = localStorage.getItem("token");
+        if (token) {alert("Logout Failed")} else {alert("Successfully Logged Out")};
     }
 
     const handleCreateTeam = props.handleCreateTeam;
@@ -24,7 +28,7 @@ function Homepage(props) {
                 <div className="header-center">
                     <h1 className="header-title">Intramural League Builder</h1>
                 </div>
-                        <button className="header-button" onClick={handleSignOut}>Sign Out</button>
+                    <button className="header-button" onClick={handleSignOut}>Sign Out</button>
             </div>
 
             <Users users={props.users} login={true} onDeleteUser={handleDeleteUser}/>

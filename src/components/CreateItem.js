@@ -50,7 +50,7 @@ function CreateItem(props) {
              name: teamname,
              numPlayers: numPlayers,
              captain: captain,
-             logo: logo
+             image: logo
         };
 
         props.handleCreateTeam(newTeam);
@@ -92,7 +92,7 @@ function CreateItem(props) {
               />
           </div>
           <div className="createform">
-              <label htmlFor="logo">Select Logo: </label>
+              <label htmlFor="logo">Logo: </label>
               <input
                   id="logo"
                   type="logo"
@@ -100,6 +100,18 @@ function CreateItem(props) {
                   value={logo}
                   onChange={handleLogoChange}
               />
+          </div>
+          <div className="createform">
+            <label htmlFor="logoPreview">Logo Preview: </label>
+            {logo && (
+              <img
+                id="logoPreview"
+                src={logo}
+                alt="Logo Preview"
+                width="150"
+                height="150"
+              />
+            )}
           </div>
           <div className="button">
               <button onClick={handleSubmit} className="createbutton" type="button">Create Team</button>
