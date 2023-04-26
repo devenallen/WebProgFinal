@@ -31,7 +31,7 @@ function App() {
         headers: { 'x-auth-token': token }
       });
       if (tokenRes.data) {
-        // does not need this
+        console.log(tokenRes.data);
       }
     };
     checkLoggedIn();

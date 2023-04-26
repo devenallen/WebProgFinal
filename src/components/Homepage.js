@@ -9,7 +9,7 @@ function Homepage(props) {
         props.setLogin(false);
 
         const token = localStorage.getItem("token");
-        if (token) {alert("Logout Failed")} else {alert("Successfully Logged Out")};
+        if (token) {alert("Logout Failed")} else {alert("Successfully Logged Out with token value of \n" + token)};
     }
 
     const handleCreateTeam = props.handleCreateTeam;

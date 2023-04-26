@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
 function EditItem(props) {
-    // const { name } = useParams();
     const navigate = useNavigate();
     const [teamname, setTeamname] = useState('');
     const [numPlayers, setNumPlayers] = useState('');

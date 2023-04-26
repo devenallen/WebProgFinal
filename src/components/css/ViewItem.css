@@ -6,8 +6,6 @@ h1 {
     font-size: 3rem;
 }
 
-
-
 input[type="teamname"], input[type="numplayers"], input[type="captain"], input[type="logo"]{
     padding: 15px;
     border-radius: 4px;

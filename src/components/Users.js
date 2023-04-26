@@ -1,7 +1,6 @@
 import './css/Users.css';
 import Card from './Card';
 import { Link } from 'react-router-dom';
-// import './css/UserItem.css';
 import { useNavigate } from 'react-router-dom';
 
 function Users(props) {

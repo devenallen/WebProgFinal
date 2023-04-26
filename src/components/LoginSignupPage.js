@@ -24,12 +24,9 @@ function LoginSignupPage(props) {
       try {
         const loginUser = { username, password };
         const loginRes = await axios.post('http://localhost:5000/api/users/login', loginUser);
-        // props.setUserData( {
-        //   token: loginRes.data.token,
-        //   user: loginRes.data.user,
-        // });
-
+        
         localStorage.setItem('auth-token', loginRes.data.token);
+        alert("Logged in with token as \n" + loginRes.data.token);
         /* set logged in to true*/
         props.setLogin(true);
         navigate('/');
@@ -46,6 +43,7 @@ function LoginSignupPage(props) {
           password,
         });
         localStorage.setItem('auth-token', loginRes.data.token);
+        alert("Signed up with token as \n" + loginRes.data.token);
         props.setLogin(true);
         navigate('/');
     

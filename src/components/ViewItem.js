@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
 function ViewItem(props) {
-    
-    // const { name, captain, numPlayers } = useParams();
-    // const image = new URLSearchParams(window.location.search).get('image');
     const { id } = useParams();
 
   // Find the user with the matching id

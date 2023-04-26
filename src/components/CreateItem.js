@@ -29,22 +29,6 @@ function CreateItem(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // axios.post('http://localhost:5000/api/teams', team)
-    //   .then((res) => {
-    //     const newTeam = {
-    //       id: teamname,
-    //       name: teamname,
-    //       numPlayers: numPlayers,
-    //       captain: captain,
-    //       logo: logo
-    //     };
-
-    //     props.handleCreateTeam(newTeam);
-    //     navigate('/');
-    //   })
-    //   .catch((err) => {
-    //     console.log('Error in CreateItem!');
-    //   });
         const newTeam = {
              id: numPlayers + teamname,
              name: teamname,

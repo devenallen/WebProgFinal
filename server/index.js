@@ -28,7 +28,6 @@ mongoose.connect(conn_str, {
     console.log('Error in DB connection ${err}');
 })
 
-
 const teams = require('./routes/api/teams');
 const users = require('./routes/api/users');
 
